@@ -16,7 +16,7 @@ header .container{
 }
 
 .logo {
-    width: clamp(8em, 50%, 9em);
+    width: 9em;
     padding: 2em 0;
 }
 
@@ -24,7 +24,7 @@ header .container{
     color: var(--very-dark-cyan);
     background-color: white;
     padding: 0.75em 2.2em;
-    border-radius: 100em;
+    border-radius: 5em;
 }
 
 
@@ -81,7 +81,7 @@ footer .container {
 }
 
 .logo-2 {
-    width: clamp(9em, 60%, 10em);
+    width: 9em;
     padding: 2em 0 1em;
 }
 
@@ -184,6 +184,10 @@ ul a:hover {
         background-size: contain;
     }
 
+    .logo, .logo-2 {
+        width: 10em;
+    }
+
     .header-cta {
         padding: 1em 4em;
     }
@@ -193,11 +197,11 @@ ul a:hover {
         grid-template-columns: 1fr 1fr;
     }
 
-    ul {
-        padding-top: 0.8em;
+    .links {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
+        padding-top: 0.8em;
     }
 
     .footer-last {
@@ -276,18 +280,11 @@ ul a:hover {
         margin-right: auto;
     }
 
-    footer .footer-main-container {
+    .footer-main-container {
         display: grid;
         grid-auto-flow: column;
         grid-template-columns: 35% 30% 35%;
         gap: 5em;
-    }
-
-    ul {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
-        padding-top: 0.8em;
     }
 
     .footer-last {
